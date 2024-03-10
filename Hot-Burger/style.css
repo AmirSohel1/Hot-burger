@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  /* border: 2px solid blue; */
+  margin-top: 40px;
+  height: 153px;
+  width: 100%;
+  z-index: 15;
+  
+  background-image: linear-gradient(
+  30deg,
+  hsl(221deg 67% 22%) 63%,
+  hsl(221deg 67% 22%) 79%,
+  hsl(221deg 67% 22%) 85%,
+  hsl(221deg 67% 22%) 89%,
+  hsl(221deg 67% 22%) 91%,
+  hsl(221deg 67% 22%) 93%,
+  hsl(221deg 67% 22%) 94%,
+  hsl(221deg 67% 22%) 95%,
+  hsl(221deg 67% 22%) 96%,
+  hsl(221deg 67% 22%) 97%,
+  hsl(221deg 67% 22%) 98%,
+  hsl(221deg 67% 22%) 98%,
+  hsl(221deg 67% 22%) 99%,
+  hsl(221deg 67% 22%) 99%,
+  hsl(221deg 67% 22%) 100%
+);
+border-radius: 30px;
+box-shadow: grey;
+animation: flow 2s 1 linear;
+}
+
+@keyframes flow {
+  from{
+    transform:translateX(0) translateY(-200%);
+  }
+  to{
+    transform: translateX(0) translateY(0);
+  }
+  
+}
+
+.hi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .cName{
+  /* border: 1px solid red; */
+  height: 80px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#header  img{
+  height: 163px;
+  width: 173px;
+  margin-top: -40px;
+}
+
+
+
+#header .cName span h1{
+  align-items: center;
+  justify-items: center;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #dcd4d496;
+}
+
+#header .cName h4{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a7a2a25b;
+}
+
+
+#header .left{
+  /* border: 1px solid red; */
+  height: 60px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .left ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#header .left ul li{
+  list-style: none;
+  margin-right: 100px;
+}
+
+#header .left ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  transition: all .4s ease-in-out;
+}
+#header .left ul li a:hover{
+  color: rgb(148, 61, 61);
+}
+
+
+/*  main body */
+
+#background{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -4;
+  align-items: start;
+  margin-top: -50px;
+}
+#background .left{
+  height: 200%;
+  width: 50vw;
+  background-image: linear-gradient(
+  340deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(240deg 100% 100%) 7%,
+  hsl(240deg 100% 100%) 14%,
+  hsl(240deg 100% 100%) 23%,
+  hsl(240deg 100% 100%) 33%,
+  hsl(240deg 100% 99%) 46%,
+  hsl(240deg 100% 99%) 72%,
+  hsl(240deg 100% 99%) 88%,
+  hsl(240deg 100% 99%) 91%,
+  hsl(255deg 41% 97%) 94%,
+  hsl(270deg 27% 96%) 95%,
+  hsl(285deg 21% 94%) 96%,
+  hsl(300deg 18% 93%) 97%,
+  hsl(315deg 15% 91%) 98%,
+  hsl(330deg 14% 89%) 99%,
+  hsl(345deg 12% 88%) 99%,
+  hsl(0deg 11% 86%) 100%
+)
+
+}
+#background .right{
+  height: 200%;
+  width: 50vw;
+  background-image: linear-gradient(
+  315deg,
+  hsl(180deg 2% 11%) 0%,
+  hsl(190deg 5% 11%) 2%,
+  hsl(200deg 8% 11%) 6%,
+  hsl(209deg 11% 11%) 14%,
+  hsl(219deg 15% 11%) 36%,
+  hsl(229deg 19% 11%) 87%,
+  hsl(239deg 23% 10%) 96%,
+  hsl(249deg 27% 10%) 100%
+);
+  
+  
+}
+
+
+#main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.left_box{
+  /* border: 1px solid red; */
+  height: 500px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  animation: flow1 3s 1 linear;
+}
+
+@keyframes flow1 {
+  from{
+    transform:translateX(0) translateY(-200%);
+  }
+  to{
+    transform: translateX(0) translateY(0);
+  }
+  
+}
+
+
+.left_box h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+.left_box p{
+  font-size: x-large;
+  font-weight: 400;
+  color: rgb(68, 67, 66);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+
+
+
+.right_box{
+  border: 1px solid;
+  border: none;
+  /* transition: right 4s 1 linear; */
+animation: righttt 2s 1 linear;
+}
+
+@keyframes righttt {
+  from{
+    transform:translateX(0) translateY(-200%);
+  }
+  to{
+    transform: translateX(0) translateY(0);
+  }
+  
+}
+
+
+
+
+
+
